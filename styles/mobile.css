@@ -1,0 +1,34 @@
+@media (max-width: 690px) {
+  .main {
+    height: 75vh;
+  }
+  .title-main h1 {
+    font-size: 2.5em;
+  }
+  .perfil {
+    display: block;
+  }
+  .image,
+  .about {
+    width: 100%;
+  }
+  .about {
+    margin:70px;
+  }
+  
+  .image img {
+    width: 80%;
+  }
+  .title-main {
+    padding-top: 50%;
+  }
+  .image img {
+    width: 250px;
+  }
+}
+
+@media (max-width: 890px) {
+  .container_projects {
+    grid-template-columns: 2fr;
+  }
+}

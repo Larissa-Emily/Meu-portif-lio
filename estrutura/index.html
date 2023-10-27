@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/style.css" />
+    <link rel="stylesheet" href="/styles/mobile.css" />
+    <script src="/javascript/script.js" defer></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+    crossorigin="anonymous"
+  />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <title>Meu portifolio</title>
+  </head>
+  <body>
+    <header>
+      <div class="menuToggle" onclick="toggleMenu()"></div>
+      <ul class="navigation">
+          <li><a href="#banner"onclick="toggleMenu()">Home</a></li>
+          <li><a href="#container"onclick="toggleMenu()">Sobre mim</a></li>
+          <li><a href="#projects"onclick="toggleMenu()">Projetos</a></li>
+          <li><a href="#contact"onclick="toggleMenu()">Contatos</a></li>
+      </ul>
+  </header>
+    <section class="main" id="banner">
+      <div class="title-main">
+        <h1>Olá, meu nome é <span class="colorDest">Larissa Emily</span></h1>
+        <p>Estudante de Análise e Desenvolvimento de Sistemas e Front-End.</p>
+      </div>
+     </section>
+    <section id="container">
+      <div class="perfil" >
+        <div class="image" data-anime="left">
+          <img src="/images/perfil.jpeg" />
+        </div>
+        <div class="about" data-anime="right">
+          <h2>Quem sou eu?</h2>
+          <p>
+            Sou Desenvolvedora Front-End iniciante, focada no desenvolvimento web
+            utilizando as linguagens HTML5, CSS3 , JAVASCRIPT e futuramente TYPESCRIPT. Crio diferentes interfaces
+            webs e sistemas em JAVASCRIPT.
+          </p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem ut quia, inventore enim vitae quae veniam aspernatur consequuntur non molestias excepturi maxime laborum iure, quas porro dolore dignissimos libero doloribus!</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, optio.</p>
+          <a href="./newCvAT.pdf" download>Download CV</a>
+           <i class="bi bi-arrow-left"></i>
+        </div>
+      </div>
+    </section>
+    <!-- <section id="projects">
+
+    </section> -->
+    <section id="contact">
+      <div class="cards">
+        <div class="card">
+          <div class="header">
+            <i class="fa fa-map-marker" aria-hidden="true"></i> 
+            <span>Localização</span>
+          </div>
+          <p>Santa Luzia - MG</p>
+        </div>
+        <div class="card">
+          <div class="header">
+            <i class="fa fa-envelope" aria-hidden="true"></i>
+            <span>Email</span>
+          </div>
+          <p><a href="mailto:larissaemily456@gmail.com">larissaemily456@gmail.com</a></p>
+        </div>
+        <div class="card">
+          <div class="header">
+            <i class="fa fa-phone" aria-hidden="true"></i>
+            <span>Telefone</span>
+          </div>
+          <p><a href="tel:+31992628586">(31)992628586</a></p>
+        </div>
+      </div>
+
+    </div>
+    </section>
+    <footer>
+      <div class="links-contact">
+        <ul>
+          <li class="colorDest">
+            <a href="https://www.linkedin.com/in/larissa-emily-33022a1ba/"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+          </li>
+          <li>
+            <a href="https://github.com/Larissa-Emily"><i class="fa fa-github"></i></a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/larissa_emily02/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+
+    <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"
+  ></script>
+  </body>
+</html>
