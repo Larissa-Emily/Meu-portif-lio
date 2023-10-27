@@ -1,4 +1,16 @@
+@media (max-width: 790px) {
+  #projects .imagesProjects {
+    flex-wrap: wrap;
+  }
+}
+
 @media (max-width: 690px) {
+  .menuToggle {
+    display: block;
+  }
+  header .navigation {
+    display: none;
+  }
   .main {
     height: 75vh;
   }
@@ -13,9 +25,9 @@
     width: 100%;
   }
   .about {
-    margin:70px;
+    margin: 70px;
   }
-  
+
   .image img {
     width: 80%;
   }
@@ -25,10 +37,10 @@
   .image img {
     width: 250px;
   }
-}
 
-@media (max-width: 890px) {
-  .container_projects {
-    grid-template-columns: 2fr;
+  .imagesProjects .image,
+  .imagesProjects .descrition {
+    width: 350px;
+    margin: 10px;
   }
 }

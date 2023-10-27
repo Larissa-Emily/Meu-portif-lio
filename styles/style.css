@@ -25,7 +25,7 @@ header{
   left: 0;
   width: 100%;
   padding: 40px 100px;
-  z-index: 10000;
+  z-index: 999;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -41,6 +41,7 @@ header.sticky{
 header .navigation {
   position: relative;
   display: flex;
+  text-transform: uppercase;
 }
 
 header .navigation li{
@@ -60,7 +61,18 @@ header.sticky .navigation li a{
 }
 
 
-header.sticky .navigation li a:hover{
+header.sticky .navigation li a:hover,
+.navigation li a:hover{
+  color: #9343fe;
+  border-bottom: 2px solid #9343fe;
+}
+
+.menuToggle{
+  display: none;
+
+}
+.menuToggle i{
+  font-size: 3em;
   color: #9343fe;
 }
 
@@ -73,13 +85,12 @@ header.sticky .navigation li a:hover{
 
 .colorDest {
   color: #6c00fa;
-  margin-left: 10px;
 }
 
 .title-main {
   padding-top: 20%;
   text-align: center;
-  align-items: center;
+  align-items: center; 
 }
 
 .title-main h1 {
@@ -101,13 +112,13 @@ header.sticky .navigation li a:hover{
   padding: 30px 0px;
 }
 
-.image,
+.imagePerfil,
 .about {
-  width: 50%;
+  min-width: 50%;
   padding: 20px;
 }
 
-.image img {
+.imagePerfil img {
   width: 300px;
   opacity: 0.5;
   border-radius: 50% 20%;
@@ -132,19 +143,24 @@ header.sticky .navigation li a:hover{
   display: flex;
 }
 
-.about a {
-  padding: 15px;
-  margin: 20px 0px;
-  border: none;
-  background: #9343fe;
+.btn a, .card a{
+  text-decoration: none;
+}
+
+.btn a{
   color: #fff;
 }
 
-.about a:hover{
-  background: #6c00fa;
+.btn button{
+  padding: 5px;
+  border: none;
+  background-color: #9343fe;
+
 }
 
-
+.about .btn{
+  margin-top: 10px;
+}
 
 /*ANIMAÇÂO*/
 
@@ -166,6 +182,60 @@ header.sticky .navigation li a:hover{
   transform: translate3d(0px, 0px, 0px);
 }
 
+.bi-arrow-left {
+  color: #6c00fa;
+  margin-left: 20px;
+  font-size: 20px;
+  position: absolute;
+  animation: go .8s infinite alternate;
+}
+
+
+.bi-caret-down{
+  position: absolute;
+  font-size: 2em;
+  color: #6c00fa;
+  /* animation: move .8s infinite alternate; */
+
+}
+
+.bi-bug{
+  font-size: 2em;
+  color: #a6a7ab9a;
+  position: absolute;
+  left: 80%;
+  top: 80%;
+  animation: move .8s infinite alternate;
+
+}
+
+.bi-filetype-js{
+  color: #a6a7ab94;
+  position: absolute;
+  left: 20%;
+  top: 45%;
+  /* animation: move .8s infinite alternate; */
+}
+
+@keyframes go {
+  from {
+    transform: translateX(15px);
+  }
+  to {
+    transform: translateX(2px);
+  }
+}
+
+
+@keyframes move {
+  30%{
+    transform: rotate(10deg);
+  }
+}
+
+/* FIM ANIMAÇÂO */
+
+
 #contact{
   width: 100%;
   padding: 20px;
@@ -173,12 +243,14 @@ header.sticky .navigation li a:hover{
 
 #contact .cards{
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-evenly;
 }
 
 #contact .cards .card{
   width: 250px;
   padding: 20px;
+  margin-top:10px;
   background: #fff;
   color: #494949;
   border-radius: 10px;
@@ -187,27 +259,69 @@ header.sticky .navigation li a:hover{
   line-height: 30px;
 }
 
-
-
 #contact .cards .card .header i{
   font-size: 1.3em;
   display: block;
   color: #9343fe;
 }
 
-
-#contact .cards .card p{
+#contact .cards .card p,
+#contact .cards .card a{
   color: #9443fe80;
   cursor: pointer;
 }
 
-#contact .cards .card p:hover{
+#contact .cards .card p:hover,
+#contact .cards .card a:hover,
+.links-contact li a:hover{
   color: #9343fe;
 }
 
 #contact{
   padding: 100px 0px;
 }
+
+#projects{
+  padding:8% 0px;
+}
+
+#projects .imagesProjects{
+  display: flex;
+  justify-content: center;
+}
+
+.imagesProjects .image,
+.imagesProjects .descrition{
+  width: 500px;
+  margin: 25px 0px;
+  border-radius: 10px;
+
+}
+
+.imagesProjects .descrition{
+  background-color: #00000033;
+  padding: 20px;
+}
+
+#projects img{
+  width: 100%;
+}
+
+#projects .info{
+  text-align: center;
+  margin-top: 50px ;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 footer .links-contact ul {
   display: flex;
@@ -218,6 +332,8 @@ footer .links-contact ul {
 footer .links-contact ul li {
   margin-left: 2%;
   font-size: 1.3em;
-  color: #ececec;
 }
 
+footer .links-contact ul li a{
+  color: #fff;
+}

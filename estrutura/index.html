@@ -20,23 +20,29 @@
   </head>
   <body>
     <header>
-      <div class="menuToggle" onclick="toggleMenu()"></div>
+      <div class="menuToggle" onclick="toggleMenu()">
+        <i class="bi bi-list"></i>
+      </div>
       <ul class="navigation">
           <li><a href="#banner"onclick="toggleMenu()">Home</a></li>
           <li><a href="#container"onclick="toggleMenu()">Sobre mim</a></li>
           <li><a href="#projects"onclick="toggleMenu()">Projetos</a></li>
           <li><a href="#contact"onclick="toggleMenu()">Contatos</a></li>
       </ul>
-  </header>
+    </header>
     <section class="main" id="banner">
+      <i class="bi bi-filetype-js"></i>
       <div class="title-main">
         <h1>Olá, meu nome é <span class="colorDest">Larissa Emily</span></h1>
         <p>Estudante de Análise e Desenvolvimento de Sistemas e Front-End.</p>
+
+      <a href="#projects"><i class="bi bi-caret-down"></i></a>
       </div>
-     </section>
+      <i class="bi bi-bug"></i>     
+    </section>
     <section id="container">
       <div class="perfil" >
-        <div class="image" data-anime="left">
+        <div class="imagePerfil" data-anime="left">
           <img src="/images/perfil.jpeg" />
         </div>
         <div class="about" data-anime="right">
@@ -48,14 +54,52 @@
           </p>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem ut quia, inventore enim vitae quae veniam aspernatur consequuntur non molestias excepturi maxime laborum iure, quas porro dolore dignissimos libero doloribus!</p>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, optio.</p>
-          <a href="./newCvAT.pdf" download>Download CV</a>
-           <i class="bi bi-arrow-left"></i>
+          <div class="btn">
+              <button><a href="./newCvAT.pdf" download>Download CV</a></button>
+              <i class="bi bi-arrow-left"></i>
+          </div>
+
         </div>
       </div>
     </section>
-    <!-- <section id="projects">
+    <section id="projects">
+      <div class="imagesProjects">
+        <div class="image">
+          <img src="/images/tela1.png">
+        </div>
+        <div class="descrition">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos nobis eius quae corporis, consequuntur est atque dolores delectus error illum, quisquam labore culpa? Corrupti, illum!</p>
+        </div>
+      </div>
+      <div class="imagesProjects">
+        <div class="descrition">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos nobis eius quae corporis, consequuntur est atque dolores delectus error illum, quisquam labore culpa? Corrupti, illum!</p>
+        </div>
+        <div class="image">
+          <img src="/images/tela2.png">
+        </div>
 
-    </section> -->
+      </div>
+      <div class="imagesProjects">
+        <div class="image">
+          <img src="/images/tela3.png">
+        </div>
+        <div class="descrition">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos nobis eius quae corporis, consequuntur est atque dolores delectus error illum, quisquam labore culpa? Corrupti, illum!</p>
+        </div>
+      </div>
+      <div class="imagesProjects">
+        <div class="descrition">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos nobis eius quae corporis, consequuntur est atque dolores delectus error illum, quisquam labore culpa? Corrupti, illum!</p>
+        </div>
+        <div class="image">
+          <img src="/images/tela4.png">
+        </div>
+      </div>
+      <div class="info">
+        <h3>Tem muito mais no meu Github <i class="bi bi-arrow-down-short"></i></h3>
+      </div>
+    </section>
     <section id="contact">
       <div class="cards">
         <div class="card">
@@ -80,30 +124,30 @@
           <p><a href="tel:+31992628586">(31)992628586</a></p>
         </div>
       </div>
-
     </div>
     </section>
+
     <footer>
       <div class="links-contact">
         <ul>
-          <li class="colorDest">
-            <a href="https://www.linkedin.com/in/larissa-emily-33022a1ba/"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+          <li>
+            <a href="https://www.linkedin.com/in/larissa-emily-33022a1ba/" class="colorDest"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
           </li>
           <li>
-            <a href="https://github.com/Larissa-Emily"><i class="fa fa-github"></i></a>
+            <a href="https://github.com/Larissa-Emily"class="colorDest"><i class="fa fa-github"></i></a>
           </li>
           <li>
-            <a href="https://www.instagram.com/larissa_emily02/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            <a href="https://www.instagram.com/larissa_emily02/" class="colorDest"><i class="fa fa-instagram" aria-hidden="true"></i></a>
           </li>
         </ul>
       </div>
     </footer>
 
 
-    <script
+    <!-- <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous"
-  ></script>
+  ></script> -->
   </body>
-</html>
+</html> 
