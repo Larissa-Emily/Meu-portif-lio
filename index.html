@@ -25,7 +25,8 @@
       </div>
       <ul class="navigation">
           <li><a href="#banner"onclick="toggleMenu()">Home</a></li>
-          <li><a href="#container"onclick="toggleMenu()">Sobre mim</a></li>
+          <li><a href="#about-me"onclick="toggleMenu()">Sobre mim</a></li>
+          <li><a href="#experience"onclick="toggleMenu()">Experiência</a></li>
           <li><a href="#projects"onclick="toggleMenu()">Projetos</a></li>
           <li><a href="#contact"onclick="toggleMenu()">Contatos</a></li>
       </ul>
@@ -35,71 +36,100 @@
       <div class="title-main">
         <h1>Olá, meu nome é <span class="colorDest">Larissa Emily</span></h1>
         <p>Estudante de Análise e Desenvolvimento de Sistemas e Front-End.</p>
-
-      <a href="#projects"><i class="bi bi-caret-down"></i></a>
+        <div class="btn">
+          <button><a href="./meuCV.pdf" download>Download CV</a></button>
+      </div>
       </div>
       <i class="bi bi-bug"></i>     
     </section>
-    <section id="container">
+    <section id="about-me">
       <div class="perfil" >
         <div class="imagePerfil" data-anime="left">
           <img src="/images/perfil.jpeg" />
         </div>
         <div class="about" data-anime="right">
-          <h2>Quem sou eu?</h2>
-          <p>
-            Sou Desenvolvedora Front-End iniciante, focada no desenvolvimento web
-            utilizando as linguagens HTML5, CSS3 , JAVASCRIPT e futuramente TYPESCRIPT. Crio diferentes interfaces
-            webs e sistemas em JAVASCRIPT.
-          </p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem ut quia, inventore enim vitae quae veniam aspernatur consequuntur non molestias excepturi maxime laborum iure, quas porro dolore dignissimos libero doloribus!</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, optio.</p>
-          <div class="btn">
-              <button><a href="./newCvAT.pdf" download>Download CV</a></button>
-              <i class="bi bi-arrow-left"></i>
+          <h2>Sobre Mim</h2>
+          <div class="about-container">
+            <div class="about-container-one">
+              <p><i class="bi bi-award-fill"></i></p>
+              <span>Experiência</span> 
+              <p>1+ anos</p>
+              <p>Frontend Developer</p>
+            </div>
+            <div class="about-container-two">
+              <p><i class="bi bi-person-fill"></i></p>
+              <span>Educação</span>
+              <p>Tecnólogo em ADS</p>
+              <p>UniAmérica Centro Universitário </p>
+            </div>
           </div>
+          
+          <p class="about-text">Estou disposta a enfrentar novos desafios, e contribuir com meus conhecimentos e entusiasmo, para a equipe.
+            Sou uma pessoa responsável, dedicada, possuo facilidade em aprender novas coisas, viso o crescimento continuo.</p>
+        
 
         </div>
       </div>
     </section>
+    <section id="experience">
+      <h1>Experiências</h1>
+      <div class="my-experiences">
+        <div class="experience-technology">
+          <h3>Frontend Development</h3>
+          <ul>
+            <li><i class="bi bi-check-circle-fill"></i> <p>HTML</p></li>
+            <li><i class="bi bi-check-circle-fill"></i> <p>CSS</p></li>
+            <li><i class="bi bi-check-circle-fill"></i> <p>JAVASCRIPT</p></li>
+            <li><i class="bi bi-check-circle-fill"></i> <p>SQL</p></li>
+          </ul>
+        </div>
+        <div class="other-experiences">
+          <h3>Outros</h3>
+          <ul>
+            <li><i class="bi bi-check-circle-fill"></i> <p>GIT</p></li>
+            <li><i class="bi bi-check-circle-fill"></i> <p>GITHUB</p></li>
+            <li><i class="bi bi-check-circle-fill"></i> <p>INTRODUÇÃO A REDES</p></li>
+            <li><i class="bi bi-check-circle-fill"></i> <p>MODELAGEM DE DADOS</p></li>
+          </ul>
+        </div>
+      </div>
+    </section>
     <section id="projects">
-      <div class="imagesProjects">
-        <div class="image">
-          <img src="/images/tela1.png">
-        </div>
-        <div class="descrition">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos nobis eius quae corporis, consequuntur est atque dolores delectus error illum, quisquam labore culpa? Corrupti, illum!</p>
-        </div>
-      </div>
-      <div class="imagesProjects">
-        <div class="descrition">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos nobis eius quae corporis, consequuntur est atque dolores delectus error illum, quisquam labore culpa? Corrupti, illum!</p>
-        </div>
-        <div class="image">
-          <img src="/images/tela2.png">
-        </div>
+      <h1>Projetos</h1>
+      <div class="projects-container">
+        <div class="project">
+          <img src="./images/pj1.png">
+          <h3>Site cafeteria</h3>
+          <div class="links-projects">
+            <button><a href="https://github.com/Larissa-Emily/cafeteria">GitHub</a></button>
 
-      </div>
-      <div class="imagesProjects">
-        <div class="image">
-          <img src="/images/tela3.png">
+            <button>Ver</button>
+          </div>
         </div>
-        <div class="descrition">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos nobis eius quae corporis, consequuntur est atque dolores delectus error illum, quisquam labore culpa? Corrupti, illum!</p>
+        <div class="project">
+          <img src="./images/pj2.png">
+          <h3>Quiz App</h3>
+          <div class="links-projects">
+            <button><a href="https://github.com/Larissa-Emily/Quiz-APP">GitHub</a></button>
+            <button><a href="https://larissa-emily.github.io/Quiz-APP/">Ver</a></button>
+          </div>
         </div>
-      </div>
-      <div class="imagesProjects">
-        <div class="descrition">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos nobis eius quae corporis, consequuntur est atque dolores delectus error illum, quisquam labore culpa? Corrupti, illum!</p>
-        </div>
-        <div class="image">
-          <img src="/images/tela4.png">
+        <div class="project">
+          <img src="./images/pj3.png">
+          <h3>Controle financeiro</h3>
+          <div class="links-projects">
+            <button><a href="https://github.com/Larissa-Emily/web_Banco">GitHub</a></button>
+            <button>Ver</button>
+          </div>
         </div>
       </div>
       <div class="info">
         <h3>Tem muito mais no meu Github <i class="bi bi-arrow-down-short"></i></h3>
       </div>
     </section>
+
+
+
     <section id="contact">
       <div class="cards">
         <div class="card">
@@ -142,12 +172,5 @@
         </ul>
       </div>
     </footer>
-
-
-    <!-- <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-    crossorigin="anonymous"
-  ></script> -->
   </body>
 </html> 

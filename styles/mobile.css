@@ -1,9 +1,3 @@
-@media (max-width: 790px) {
-  #projects .imagesProjects {
-    flex-wrap: wrap;
-  }
-}
-
 @media (max-width: 690px) {
   .menuToggle {
     display: block;
