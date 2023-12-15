@@ -14,7 +14,7 @@
 #about-me,
 #projects,
 #contact,
-#experience,
+#knowledge,
 footer {
   background-color: #02081b;
   color: #ececec;
@@ -35,7 +35,7 @@ header {
 
 header.sticky {
   background: #02081b;
-  padding: 30px 100px;
+  padding: 20px 100px;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
 }
 
@@ -70,19 +70,19 @@ header.sticky .navigation li a:hover,
   display: none;
 }
 .menuToggle i {
-  font-size: 3em;
+  font-size: 2.5em;
   color: #9343fe;
 }
 
 .main {
   width: 100vw;
-  height: 80vh;
+  height: 100vh;
   background: linear-gradient(#020618dc, #020618ef), url(/images/banner1.jpg);
   background-size: cover;
 }
 
 .colorDest {
-  color: #6c00fa;
+  color: #9343fe;
 }
 
 .title-main {
@@ -101,7 +101,7 @@ header.sticky .navigation li a:hover,
 }
 
 #about-me {
-  padding: 100px 0px;
+  padding-top: 100px;
 }
 
 .perfil {
@@ -113,7 +113,6 @@ header.sticky .navigation li a:hover,
 .imagePerfil,
 .about {
   min-width: 50%;
-  padding: 20px;
 }
 
 .imagePerfil img {
@@ -148,7 +147,7 @@ header.sticky .navigation li a:hover,
 
 .about-container-one,
 .about-container-two {
-  width: 280px;
+  width: 300px;
   padding: 20px;
   border: 1px solid #a6a7ab;
   border-radius: 20px;
@@ -236,14 +235,18 @@ header.sticky .navigation li a:hover,
 
 /* FIM ANIMAÇÂO */
 
-.my-experiences {
+#knowledge {
+  padding: 5% 0%;
+}
+
+.my-knowledges {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
 
-.experience-technology,
-.other-experiences {
+.knowledge-technology,
+.other-knowledges {
   width: clamp(350px, 490px, 600px);
   padding: 30px;
   border: 1px solid #a6a7ab;
@@ -251,22 +254,26 @@ header.sticky .navigation li a:hover,
   margin-top: 20px;
 }
 
-.experience-technology ul li,
-.other-experiences ul li {
+.knowledge-technology ul li,
+.other-knowledges ul li {
   display: flex;
 }
-.experience-technology ul li p,
-.other-experiences ul li p {
+.knowledge-technology ul li p,
+.other-knowledges ul li p {
   margin-left: 15px;
 }
-#experience h1,
-#projects h1{
+#knowledge h1,
+#projects h1 {
   align-items: center;
   text-align: center;
   margin: 110px 0px;
 }
 
-.projects-container{
+#projects {
+  padding: 5%;
+}
+
+.projects-container {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
@@ -274,13 +281,12 @@ header.sticky .navigation li a:hover,
   text-align: center;
 }
 
-.projects-container img{
+.projects-container img {
   width: 100%;
   border-radius: 12px;
-
 }
 
-.project{
+.project {
   width: 400px;
   border: 1px solid #a6a7ab;
   border-radius: 20px;
@@ -288,16 +294,19 @@ header.sticky .navigation li a:hover,
   margin-top: 20px;
 }
 
-
-.project h3{
+.project h3 {
   padding: 20px;
 }
-.project .links-projects{
+.project .links-projects {
   display: flex;
 }
 
+.project .links-projects a {
+  text-decoration: none;
+  color: inherit;
+}
 
-.project .links-projects button{
+.project .links-projects button {
   width: 150px;
   padding: 8px;
   margin: 10px;
@@ -305,7 +314,7 @@ header.sticky .navigation li a:hover,
   border: none;
 }
 
-.project .links-projects button:hover{
+.project .links-projects button:hover {
   background-color: #9343fe;
   color: #fff;
 }

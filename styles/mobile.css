@@ -2,6 +2,9 @@
   .menuToggle {
     display: block;
   }
+  header.sticky {
+    padding: 5px;
+  }
   header .navigation {
     display: none;
   }
@@ -37,4 +40,19 @@
     width: 350px;
     margin: 10px;
   }
+  .knowledge-technology,
+  .other-knowledges {
+    width: clamp(350px, 350px, 600px);
+  }
+  .about-container-one,
+.about-container-two {
+  width: 280px;
+  margin: 25px 0px;
 }
+.about-container {
+  display: block;
+}
+
+}
+
+
